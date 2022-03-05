@@ -82,6 +82,8 @@ Flutter 官方仓库：https://pub.flutter-io.cn/
 
 Dart 语法速查：https://www.w3cschool.cn/nxvsy/
 
+Commit 的书写规范：https://ruby-china.org/topics/15737
+
 有问题，上Google：https://google.com/
 
 ## 第一个应用
@@ -102,7 +104,11 @@ Dart 语法速查：https://www.w3cschool.cn/nxvsy/
 
 你可能需要事先学习一下它们的用法。主要有：
 
-- 
+- [flutter_platform_widgets](https://pub.flutter-io.cn/packages/flutter_platform_widgets)：由于 Flutter 既有针对 Material 的控件，又有针对 Cupertino 的控件，它可以用于同时给 Android 和 iOS 适配两套不同的 UI 风格；
+
+- [provider](https://github.com/rrousselGit/provider/blob/master/resources/translations/zh-CN/README.md#%E4%BD%BF%E7%94%A8)：一个优化架构的 [InheritedWidget](https://api.flutter-io.cn/flutter/widgets/InheritedWidget-class.html) 包装。
+
+  举个简单的例子说它的用途。如果你需要在点击一个按钮时改变某个变量，同时在另一个文本框里实时显示这个变量的值。只需要在两者的共同祖先控件上套一个`Provider`，让`Provider`持有这个变量，再让文本框从`Provider`那里获得变量并监听（`var value = context.watch<MyValueModel>().myValue`）。点击按钮时，从`Provider`那里获得变量并改变值（`context.read<MyValueModel>().myValue="123"`），这个赋值的时候就会自动刷新文本框的内容了，无需想方设法从按钮里发出通知：「文本框，你快调用`setState()`刷新一下自己！」，那样会让代码变得难以阅读。
 
 ## 接下来？
 
