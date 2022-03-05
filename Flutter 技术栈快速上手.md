@@ -39,7 +39,11 @@ Dart 在很多地方的语法都和`JavaScript`、`Java`、`Kotlin`、`C++`等�
 2. 编辑环境变量，在`PATH`中加入`D:\SDK\Flutter\bin`这个目录（也可能是`D:\SDK\Flutter\flutter-windows-dev-1.2.3\bin`这样的，务必先查看一下）。这样你应该可以直接在命令行里运行`flutter`和`dart`。**如果编辑完后还说「未找到命令」，重启一下电脑。**
 3. 编辑环境变量，添加`PUB_HOSTED_URL`和`FLUTTER_STORAGE_BASE_URL`两个环境变量，值分别是`https://pub.flutter-io.cn`和`https://storage.flutter-io.cn`。这是为了让你走国内镜像，否则 Flutter 需要翻墙而且速度很慢。
 4. 到 https://developer.android.google.cn/studio 安装 Android Studio。安装完后自行配置，有问题可以先 Google 一下。
-	> **我可以使用其他 IDE 吗？**
+	> **建议：**
+	> 直接从官网下载安装可能不是个最好的主意，有可能需要科学上网。  
+	> 我个人推荐你试试 [Jetbrains Toolbox](https://www.jetbrains.com/zh-cn/toolbox-app/) 来一键安装 Android Studio，可以省去很多安装配置的冗余过程。
+	
+	> **我可以使用其他 IDE 吗？**  
 	> 当然！[Visual Studio Code](https://code.visualstudio.com/)就很可以。如果这样，你可以忽略第 4 步和第 5 步，转而了解[如何在 VSCode 上使用 Flutter](https://flutter.cn/docs/get-started/editor?tab=vscode)。
 5. 安装 Flutter 插件到 Android Studio。具体看 https://flutter.cn/docs/get-started/editor。
 6. 命令行执行`flutter doctor`，根据说明看看自己还缺啥。
