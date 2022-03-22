@@ -48,6 +48,7 @@ Dart 在很多地方的语法都和`JavaScript`、`Java`、`Kotlin`、`C++`等�
 5. 安装 Flutter 插件到 Android Studio。具体看 https://flutter.cn/docs/get-started/editor。
 6. 命令行执行`flutter doctor`，根据说明看看自己还缺啥。
 7. （可选）如果不希望连接手机，而是直接在 Windows 上搞测试，还要安装 Visual Studio 2022 Community。具体看https://flutter.cn/docs/get-started/install/windows#additional-windows-requirements的说法。
+8. 在 Android Sutdio 或其他 IDE 中[安装](https://blog.51cto.com/u_15242344/2842104) Flutter 和 Flutter Intl 两个插件。前者是 Flutter 项目的支持，后者是国际化的支持。
 
 全部搞定后，`flutter doctor`的结果应该是这样的：
 
